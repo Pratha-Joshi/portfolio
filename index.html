@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pratha Joshi. Data science, analytics & applied AI. M.S. Data Science student at the University of Washington." />
+  <title>Pratha Joshi | The Curious Data Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Custom cursor -->
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-label" aria-hidden="true"></div>
+
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Navigation -->
+  <header class="nav" id="top">
+    <a href="#top" class="nav__brand">
+      <span class="nav__brand-mono">lab://</span>pratha-joshi
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="hero">
+      <canvas class="hero__canvas" aria-hidden="true"></canvas>
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <p class="hero__eyebrow mono">
+          <span class="dot"></span> experiment_log
+        </p>
+        <h1 class="hero__name">
+          <span class="hero__name-line">Pratha</span>
+          <span class="hero__name-line hero__name-line--accent">Joshi</span>
+        </h1>
+        <p class="hero__descriptor">
+          Data Science, Analytics &amp; Applied AI:
+          <span class="hero__descriptor-em">turning complex data into useful discoveries.</span>
+        </p>
+        <p class="hero__sub">
+          M.S. Data Science @ University of Washington. Building data-driven solutions
+          across the full data lifecycle, from raw signals to evidence-grounded answers.
+        </p>
+        <div class="hero__actions">
+          <a href="#work" class="btn btn--primary">
+            Explore my work
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#contact" class="btn btn--ghost">Get in touch</a>
+        </div>
+      </div>
+
+      <!-- Currently exploring ticker -->
+      <div class="ticker" aria-label="Currently exploring">
+        <span class="ticker__label mono">currently_exploring:</span>
+        <div class="ticker__viewport">
+          <div class="ticker__track">
+            <span>Retrieval Systems</span><span class="sep">/</span>
+            <span>Machine Learning</span><span class="sep">/</span>
+            <span>Analytics Engineering</span><span class="sep">/</span>
+            <span>Applied AI</span><span class="sep">/</span>
+            <span>RAG</span><span class="sep">/</span>
+            <span>Information Retrieval</span><span class="sep">/</span>
+            <span aria-hidden="true">Retrieval Systems</span><span class="sep" aria-hidden="true">/</span>
+            <span aria-hidden="true">Machine Learning</span><span class="sep" aria-hidden="true">/</span>
+            <span aria-hidden="true">Analytics Engineering</span><span class="sep" aria-hidden="true">/</span>
+            <span aria-hidden="true">Applied AI</span><span class="sep" aria-hidden="true">/</span>
+            <span aria-hidden="true">RAG</span><span class="sep" aria-hidden="true">/</span>
+            <span aria-hidden="true">Information Retrieval</span><span class="sep" aria-hidden="true">/</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WORK / PROJECTS ================= -->
+    <section class="section work" id="work">
+      <div class="section__head reveal">
+        <span class="section__index mono">01 / featured_experiments</span>
+        <h2 class="section__title">Make the projects the experience.</h2>
+        <p class="section__lede">
+          A few experiments from the lab. Each one is meant to be easy to follow,
+          with the interactions there to explore if you're curious.
+        </p>
+      </div>
+
+      <!-- Project 1: Retrieval experiment -->
+      <article class="project reveal" id="project-retrieval">
+        <div class="project__meta">
+          <span class="project__id mono">EXP-01</span>
+          <h3 class="project__title">Customer Review Retrieval &amp; Evidence-Based Analytics</h3>
+          <p class="project__blurb">
+            An end-to-end information retrieval and RAG system built around more than
+            <strong>568,000 Amazon product reviews</strong>. Compare retrieval strategies,
+            then generate answers grounded in real evidence.
+          </p>
+          <ul class="project__points">
+            <li>Built and compared <strong>BM25</strong>, <strong>dense</strong>, and <strong>hybrid</strong> retrieval.</li>
+            <li>BGE embeddings + <strong>FAISS</strong> for semantic retrieval, with cross-encoder reranking.</li>
+            <li>Evaluated with <strong>Hit Rate@K</strong>, <strong>MRR</strong>, and <strong>nDCG@10</strong>.</li>
+            <li>Product-level analytics and evidence-grounded answers from a locally run LLM.</li>
+          </ul>
+          <p class="project__demonstrates mono">
+            Demonstrates: Information Retrieval · Evaluation · Applied NLP · RAG System Design
+          </p>
+          <a class="project__link" href="https://github.com/Pratha-Joshi/customer-review-retrieval-and-analytics" target="_blank" rel="noopener" data-cursor="view repo →">
+            View repository
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <!-- Interactive retrieval pipeline -->
+        <div class="project__visual retrieval-demo" aria-label="Interactive retrieval pipeline demo">
+          <div class="retrieval-demo__bar">
+            <span class="mono">query →</span>
+            <label class="sr-only" for="retrieval-query">Try a query</label>
+            <input id="retrieval-query" type="text" value="what do reviewers say about the dog food quality?" autocomplete="off" spellcheck="false" />
+            <button class="retrieval-demo__run" type="button">run</button>
+          </div>
+          <div class="retrieval-demo__flow">
+            <div class="flow-step" data-step="query"><span class="mono">01</span><p>query</p></div>
+            <span class="flow-arrow">→</span>
+            <div class="flow-step" data-step="retrieve"><span class="mono">02</span><p>retrieve</p></div>
+            <span class="flow-arrow">→</span>
+            <div class="flow-step" data-step="rerank"><span class="mono">03</span><p>rerank</p></div>
+            <span class="flow-arrow">→</span>
+            <div class="flow-step" data-step="answer"><span class="mono">04</span><p>evidence</p></div>
+          </div>
+          <div class="retrieval-demo__compare">
+            <p class="retrieval-demo__caption mono">relative retrieval quality (illustrative)</p>
+            <div class="bar-row"><span>BM25</span><div class="bar"><i style="--w:58%"></i></div></div>
+            <div class="bar-row"><span>Dense</span><div class="bar"><i style="--w:74%"></i></div></div>
+            <div class="bar-row"><span>Hybrid</span><div class="bar bar--accent"><i style="--w:91%"></i></div></div>
+            <p class="retrieval-demo__note">Illustrative comparison. Metrics (Hit Rate@K, MRR, nDCG@10) are computed in the repository.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2: SQL data warehouse architecture map -->
+      <article class="project project--reverse reveal" id="project-warehouse">
+        <div class="project__meta">
+          <span class="project__id mono">EXP-02</span>
+          <h3 class="project__title">SQL Data Warehouse / Analytics</h3>
+          <p class="project__blurb">
+            A modern data warehouse built on SQL Server, showing the flow from raw data
+            through transformation to analysis-ready, decision-supporting tables.
+          </p>
+          <ul class="project__points">
+            <li>End-to-end <strong>ETL</strong> from raw sources to curated models.</li>
+            <li><strong>Dimensional modeling</strong> and data-quality checks.</li>
+            <li>Analytical querying that supports reporting and insight.</li>
+          </ul>
+          <p class="project__demonstrates mono">
+            Demonstrates: Data Modeling · SQL · Analytical Engineering
+          </p>
+          <a class="project__link" href="https://github.com/Pratha-Joshi/sql-data-warehouse-project" target="_blank" rel="noopener" data-cursor="view repo →">
+            View repository
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <div class="project__visual arch-map" aria-label="Data architecture map">
+          <div class="arch-layer" data-layer="raw">
+            <span class="arch-layer__tag mono">Raw</span>
+            <p>Source Systems &amp; Flat Files</p>
+          </div>
+          <div class="arch-flow" aria-hidden="true"><span></span></div>
+          <div class="arch-layer" data-layer="transform">
+            <span class="arch-layer__tag mono">Transform</span>
+            <p>ETL · Cleaning · Dimensional Modeling</p>
+          </div>
+          <div class="arch-flow" aria-hidden="true"><span></span></div>
+          <div class="arch-layer arch-layer--accent" data-layer="serve">
+            <span class="arch-layer__tag mono">Serve</span>
+            <p>Analysis-Ready Tables &amp; Insights</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3: Customer segmentation -->
+      <article class="project reveal" id="project-segmentation">
+        <div class="project__meta">
+          <span class="project__id mono">EXP-03</span>
+          <h3 class="project__title">Customer Segmentation Analysis</h3>
+          <p class="project__blurb">
+            End-to-end customer segmentation using <strong>RFM analysis</strong> and
+            unsupervised clustering to derive actionable marketing insights.
+          </p>
+          <ul class="project__points">
+            <li>Scored customers on <strong>Recency, Frequency, Monetary</strong> value.</li>
+            <li>Applied unsupervised <strong>clustering</strong> to group behavior.</li>
+            <li>Translated clusters into clear marketing recommendations.</li>
+          </ul>
+          <p class="project__demonstrates mono">
+            Demonstrates: EDA · Unsupervised ML · Data Storytelling
+          </p>
+          <a class="project__link" href="https://github.com/Pratha-Joshi/customer-segmentation-analysis" target="_blank" rel="noopener" data-cursor="view repo →">
+            View repository
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <div class="project__visual segment-map" aria-label="Customer segmentation clusters">
+          <p class="segment-title mono">Customer Segments (PCA Projection)</p>
+          <svg viewBox="0 0 300 220" class="segment-svg" role="img" aria-label="PCA projection of four customer segments: VIP, Loyal but Cooling, New, and Dormant">
+            <g class="cluster cluster--1"></g>
+            <g class="cluster cluster--2"></g>
+            <g class="cluster cluster--3"></g>
+            <g class="cluster cluster--4"></g>
+          </svg>
+          <div class="segment-legend mono">
+            <span><i class="dot dot--1"></i> VIP</span>
+            <span><i class="dot dot--2"></i> Loyal but Cooling</span>
+            <span><i class="dot dot--3"></i> New</span>
+            <span><i class="dot dot--4"></i> Dormant</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section class="section experience" id="experience">
+      <div class="section__head reveal">
+        <span class="section__index mono">02 / career_trace</span>
+        <h2 class="section__title">Where the experiments took shape.</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="timeline__item reveal">
+          <div class="timeline__dot" aria-hidden="true"></div>
+          <div class="timeline__body">
+            <p class="timeline__date mono">Aug 2023 to Aug 2025</p>
+            <h3 class="timeline__role">Associate</h3>
+            <p class="timeline__org">PwC</p>
+            <p class="timeline__desc">
+              Owned analytics workstreams end to end in a client-facing environment,
+              translating business problems into data pipelines, models, and
+              decision-support solutions in Python and SQL.
+            </p>
+            <ul class="timeline__points">
+              <li>Engineered automated ETL and data-quality workflows to clean, transform, and validate operational datasets, cutting manual data preparation by about 30% and improving downstream reliability.</li>
+              <li>Applied statistical and predictive modeling in Python to surface operational trends, anomalies, and performance drivers.</li>
+              <li>Turned those findings into actionable recommendations for senior stakeholders.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="timeline__item reveal">
+          <div class="timeline__dot" aria-hidden="true"></div>
+          <div class="timeline__body">
+            <p class="timeline__date mono">Jan 2023 to Jun 2023</p>
+            <h3 class="timeline__role">Business Analyst Intern</h3>
+            <p class="timeline__org">Amazon</p>
+            <p class="timeline__desc">
+              Worked on data and automation initiatives, building cloud data workflows and
+              applying statistical analysis to a big-data project.
+            </p>
+            <ul class="timeline__points">
+              <li>Built a SQL-based ETL pipeline using AWS Glue, S3, Redshift, and Athena.</li>
+              <li>Developed a serverless notification workflow with AWS Lambda and Amazon SES.</li>
+              <li>Applied statistical analysis to a big-data project.</li>
+            </ul>
+            <!-- High-level pipeline flow -->
+            <div class="pipeline mono" aria-label="High-level data pipeline: Glue to S3 to Redshift and Athena">
+              <span class="pipeline__node">Glue</span>
+              <span class="pipeline__arrow">→</span>
+              <span class="pipeline__node">S3</span>
+              <span class="pipeline__arrow">→</span>
+              <span class="pipeline__node">Redshift</span>
+              <span class="pipeline__slash">/</span>
+              <span class="pipeline__node">Athena</span>
+            </div>
+            <div class="pipeline pipeline--alt mono" aria-label="Serverless notification workflow: Lambda to SES">
+              <span class="pipeline__node">Lambda</span>
+              <span class="pipeline__arrow">→</span>
+              <span class="pipeline__node">SES</span>
+              <span class="pipeline__caption">Serverless Notifications</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="timeline__item reveal">
+          <div class="timeline__dot" aria-hidden="true"></div>
+          <div class="timeline__body">
+            <p class="timeline__date mono">Jun 2022 to Aug 2022</p>
+            <h3 class="timeline__role">Performance Engineering Intern</h3>
+            <p class="timeline__org">GE Power</p>
+            <p class="timeline__desc">
+              An early, hands-on introduction to engineering analysis, where I used Python
+              to automate and scale a performance-monitoring workflow.
+            </p>
+            <ul class="timeline__points">
+              <li>Automated data extraction from scanned PDF reports using Python and OCR, scaling a previously manual KPI-analysis workflow.</li>
+              <li>Applied statistical anomaly detection (normality tests, steady-state, covariance) with NumPy and pandas to flag deviations.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section skills" id="skills">
+      <div class="section__head reveal">
+        <span class="section__index mono">03 / skill_clusters</span>
+        <h2 class="section__title">Skills as a connected map.</h2>
+        <p class="section__lede">Tools I've used or am actively developing, grouped, not stacked.</p>
+      </div>
+
+      <div class="clusters">
+        <div class="cluster-card reveal">
+          <h3 class="cluster-card__title"><span class="mono">01</span> Programming &amp; Data Analysis</h3>
+          <ul class="chips">
+            <li>Python</li><li>SQL</li><li>Pandas</li><li>Statistical Analysis</li>
+          </ul>
+        </div>
+        <div class="cluster-card reveal">
+          <h3 class="cluster-card__title"><span class="mono">02</span> Data Engineering &amp; Cloud</h3>
+          <ul class="chips">
+            <li>AWS Glue</li><li>Amazon S3</li><li>Redshift</li><li>Athena</li><li>Lambda</li><li>ETL Workflows</li>
+          </ul>
+        </div>
+        <div class="cluster-card reveal">
+          <h3 class="cluster-card__title"><span class="mono">03</span> Analytics &amp; Visualization</h3>
+          <ul class="chips">
+            <li>Data Cleaning</li><li>Exploratory Data Analysis</li><li>Dashboards</li><li>Data Storytelling</li>
+          </ul>
+        </div>
+        <div class="cluster-card reveal">
+          <h3 class="cluster-card__title"><span class="mono">04</span> Machine Learning &amp; AI</h3>
+          <ul class="chips">
+            <li>ML Fundamentals</li><li>Information Retrieval</li><li>BM25</li><li>FAISS</li><li>Embeddings</li><li>Reranking</li><li>RAG</li>
+          </ul>
+        </div>
+        <div class="cluster-card reveal">
+          <h3 class="cluster-card__title"><span class="mono">05</span> Data Platforms &amp; Tools</h3>
+          <ul class="chips">
+            <li>dbt</li><li>Dimensional Modeling</li><li>Data Warehousing</li><li>SQL Server</li><li>Git/GitHub</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section about" id="about">
+      <div class="section__head reveal">
+        <span class="section__index mono">04 / about_the_researcher</span>
+        <h2 class="section__title">About me.</h2>
+      </div>
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <p>
+            I'm pursuing an M.S. in Data Science at the University of Washington, Seattle.
+            My experience spans business analytics, data engineering, and performance
+            engineering, including a Business Analyst Internship at Amazon and an Associate
+            role at PwC.
+          </p>
+          <p>
+            I enjoy working across the data lifecycle: extracting and preparing data, finding
+            patterns, building analytical solutions, and communicating results. Right now I'm
+            deepening my skills in machine learning, information retrieval, and
+            retrieval-augmented generation, while exploring how data and AI can solve
+            practical problems.
+          </p>
+          <p>
+            I'm especially interested in data science, analytics engineering, machine learning,
+            applied AI, and data engineering.
+          </p>
+        </div>
+
+        <aside class="about__side">
+          <div class="education reveal">
+            <h3 class="about__subtitle mono">// education</h3>
+            <div class="edu-item">
+              <p class="edu-item__school">University of Washington, Seattle</p>
+              <p class="edu-item__degree">M.S. in Data Science</p>
+              <p class="edu-item__meta mono">expected spring 2028</p>
+            </div>
+            <div class="edu-item">
+              <p class="edu-item__degree">B.Tech. in Mechanical &amp; Automation Engineering</p>
+              <p class="edu-item__meta mono">GPA 3.8</p>
+            </div>
+          </div>
+
+          <!-- Hidden fun-fact interaction -->
+          <button class="funfact reveal" type="button" aria-expanded="false" aria-controls="funfact-panel">
+            <span class="funfact__prompt mono">// discover a fun fact</span>
+            <span class="funfact__hint">tap to reveal</span>
+          </button>
+          <div class="funfact__panel" id="funfact-panel" hidden>
+            <p>
+              I taught myself how to swim by watching YouTube videos. It's a small example of
+              how I approach unfamiliar things: stay curious, learn independently, and keep
+              practicing.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ================= LEADERSHIP ================= -->
+    <section class="section leadership" id="leadership">
+      <div class="section__head reveal">
+        <span class="section__index mono">05 / collaboration_&_initiative</span>
+        <h2 class="section__title">Leadership &amp; community.</h2>
+      </div>
+      <div class="lead-grid">
+        <div class="lead-card reveal">
+          <h3 class="lead-card__title">WiDS Worldwide Ambassador</h3>
+          <p>
+            Ambassador for Women in Data Science, helping grow community and visibility for
+            women working in data.
+          </p>
+        </div>
+        <div class="lead-card lead-card--wide reveal">
+          <h3 class="lead-card__title">Enactus: Project Dharini</h3>
+          <p>
+            Contributed to an initiative promoting sustainable menstrual hygiene in rural
+            communities. We ran awareness efforts encouraging adoption of clay incinerators
+            made by local potters for safe disposal of sanitary waste, addressing menstrual
+            waste management while supporting the livelihoods of traditional potter communities.
+          </p>
+        </div>
+        <div class="lead-card reveal">
+          <h3 class="lead-card__title">Head Coordinator, Training &amp; Placement Cell</h3>
+          <p>
+            Led coordination for the student Training &amp; Placement Cell, organizing efforts
+            that connected students with opportunities.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section contact" id="contact">
+      <div class="section__head reveal">
+        <span class="section__index mono">06 / open_a_channel</span>
+        <h2 class="section__title">Let's build something with data.</h2>
+        <p class="section__lede">
+          Open to Data Science, Analytics Engineering, and Applied AI opportunities.
+        </p>
+      </div>
+      <ul class="contact__links reveal">
+        <li>
+          <a href="mailto:pjoshi20@uw.edu" data-cursor="email →">
+            <span class="contact__label mono">email</span>
+            <span class="contact__value">pjoshi20@uw.edu</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/pratha-joshi" target="_blank" rel="noopener" data-cursor="connect →">
+            <span class="contact__label mono">linkedin</span>
+            <span class="contact__value">in/pratha-joshi</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Pratha-Joshi" target="_blank" rel="noopener" data-cursor="view code →">
+            <span class="contact__label mono">github</span>
+            <span class="contact__value">Pratha-Joshi</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="mono">© <span id="year"></span> Pratha Joshi</p>
+    <a href="#top" class="footer__top">back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
